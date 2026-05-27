@@ -3,6 +3,8 @@ services:
     container_name: ubuntu-rajvifatingan
     build:
       context: .
+      dockerfile: Dockerfile
+    image: rajvi04sf/portofolioweb_rajvi_fatingan:latest
     ports:
       - "3000:3000"
     restart: unless-stopped
