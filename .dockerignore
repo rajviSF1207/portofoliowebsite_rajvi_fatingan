@@ -49,7 +49,7 @@ lerna-debug.log*
 Dockerfile*
 .dockerignore
 docker-compose*.yml
-docker-compose.yaml
+docker-compose.yml
 
 *.md
 docs/
