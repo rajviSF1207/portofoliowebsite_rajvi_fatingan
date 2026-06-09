@@ -1,5 +1,4 @@
-@import "../node_modules/tailwindcss/dist/lib.d.mts";
-
+@import "tailwindcss";
 .header {
   position: sticky;
   top: 0;
@@ -20,7 +19,6 @@
   letter-spacing: 1px;
 }
 
-/* nav links */
 .nav {
   display: flex;
   gap: 1.5rem;
@@ -51,4 +49,38 @@
 
 .nav a:hover::after {
   width: 100%;
+}
+.welcome-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background: #D2CEBA;
+}
+
+.welcome-container h1 {
+  font-size: 4rem;
+  color: #3F356A;
+}
+
+.welcome-container p {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.see-more-btn {
+  text-decoration: none;
+  background: #3F356A;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.see-more-btn:hover {
+  background: #6F6596;
+  transform: translateY(-2px);
 }

@@ -1,3 +1,3 @@
-export default function Aboutme() {
-    return <div>About Me</div>
+export default function Footer() {
+    return <div>mail etc</div>
 }

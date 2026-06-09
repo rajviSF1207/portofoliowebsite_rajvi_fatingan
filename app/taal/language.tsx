@@ -1,3 +1,3 @@
-export default function Aboutme() {
+export default function Language() {
     return <div>About Me</div>
 }
