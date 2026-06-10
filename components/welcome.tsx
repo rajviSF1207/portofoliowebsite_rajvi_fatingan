@@ -20,8 +20,10 @@ export default function Welcome() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
             >
-                Welcome to my portfolio site.
+                Welcome to my portfolio site :)
             </motion.p>
+
+            <br/>
 
             <motion.div
                 initial={{ opacity: 0 }}

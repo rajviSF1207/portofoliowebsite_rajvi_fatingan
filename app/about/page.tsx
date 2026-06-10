@@ -11,31 +11,24 @@ export default function AboutPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                {}
                 <div className="about-text">
                     <h1>About Me</h1>
 
                     <p>
-                        Hi <strong>Rajvi</strong>
-
+                        Hi my name is Rajvi Fatingan and ....
                     </p>
 
                     <p>
-
+                        {/* extra text */}
                     </p>
-
-                    <div className="tags">
-                      <span></span>
-                    </div>
                 </div>
 
-                {}
                 <div className="image-scroll">
                     <div className="scroll-container">
-                        <img src="/images/1.jpg" alt="project 1" />
-                        <img src="/images/2.jpg" alt="project 2" />
-                        <img src="/images/3.jpg" alt="project 3" />
-                        <img src="/images/4.jpg" alt="project 4" />
+                        <img src="/images/balloonme.jpg" alt="me with balloons" />
+                        <img src="/images/snowme.jpg" alt="me in snow" />
+                        <img src="/images/waterme.jpg" alt="me on water bridge" />
+                        <img src="/images/project4.jpg" alt="project 4" />
                     </div>
                 </div>
             </motion.div>

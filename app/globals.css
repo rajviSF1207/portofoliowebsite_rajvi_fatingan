@@ -1,22 +1,37 @@
 @import "tailwindcss";
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: #F4F1EA;
+  font-family: system-ui, sans-serif;
+}
+-->
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1rem 2rem;
   background: #3F356A;
-  color: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  color: #d2ceba;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
 }
-
-
+-->
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 1px;
+  color: white;
 }
 
 .nav {
@@ -28,9 +43,8 @@
   color: #D2CEBA;
   text-decoration: none;
   position: relative;
-  transition: 0.2s;
+  transition: 0.25s ease;
 }
-
 
 .nav a:hover {
   color: white;
@@ -43,37 +57,49 @@
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: #857BAB;
-  transition: 0.3s;
+  background: #7C73A6;
+  transition: 0.3s ease;
 }
 
 .nav a:hover::after {
   width: 100%;
 }
+
+.nav a.active {
+  color: #d2ceba;
+  font-weight: 600;
+}
+
+.nav a.active::after {
+  width: 100%;
+  background: #7C73A6;
+}
+-->
 .welcome-container {
-  height: 100vh;
+  height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  background: #D2CEBA;
+  text-align: center;
+  background: #3F356A;
 }
 
 .welcome-container h1 {
   font-size: 4rem;
-  color: #3F356A;
+  color: #ffffff;
 }
 
 .welcome-container p {
   font-size: 1.3rem;
-  color: #444;
+  color: #D2CEBA;
 }
 
 .see-more-btn {
   text-decoration: none;
-  background: #3F356A;
-  color: white;
+  background: #AFAD9D;
+  color: #000;
   padding: 12px 24px;
   border-radius: 12px;
   transition: 0.3s ease;
@@ -81,6 +107,105 @@
 }
 
 .see-more-btn:hover {
-  background: #6F6596;
+  background: #D2CEBA;
   transform: translateY(-2px);
+}
+-->
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #7C73A6;
+  color: white;
+
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.footer a {
+  color: #E6E3F3;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+-->
+.about-wrapper {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-box {
+  display: flex;
+  gap: 2rem;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  padding: 2rem;
+  width: 100%;
+  max-width: 1100px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-scroll {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  padding-bottom: 1rem;
+  max-width: 100%;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  scrollbar-width: none;
+}
+
+.scroll-container img {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+
+  border-radius: 16px;
+
+  scroll-snap-align: center;
+  flex: 0 0 auto;
 }

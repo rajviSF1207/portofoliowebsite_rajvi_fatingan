@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function LayoutContent({
                                           children,
@@ -18,7 +19,7 @@ export default function LayoutContent({
 
             <main>{children}</main>
 
-            {/*{showHeader && <Footer />}*/}
+            {showHeader && <Footer />}
         </>
     );
 }
