@@ -26,9 +26,8 @@ export default function AboutPage() {
                 <div className="image-scroll">
                     <div className="scroll-container">
                         <img src="/images/balloonme.jpg" alt="me with balloons" />
-                        <img src="/images/snowme.jpg" alt="me in snow" />
                         <img src="/images/waterme.jpg" alt="me on water bridge" />
-                        <img src="/images/project4.jpg" alt="project 4" />
+                        <img src="/images/kermisme.jpg" alt="project 4" />
                     </div>
                 </div>
             </motion.div>
