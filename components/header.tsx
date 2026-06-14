@@ -4,8 +4,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
+type PagePath = "/about" | "/ervaring" | "/extra" | "/taal";
+
 export default function Header() {
     const pathname = usePathname();
+
+    const pageTitles: Record<PagePath, string> = {
+        "/about": "About Me",
+        "/ervaring": "Experience",
+        "/extra": "Extra",
+        "/taal": "Languages",
+    };
+
+    const title =
+        pageTitles[pathname as PagePath] || "Portfolio";
 
     return (
         <motion.header
@@ -14,36 +26,25 @@ export default function Header() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="logo">
-                <Link href="/about">About me</Link>
-            </div>
+            <Link href="/about" className="logo">
+                <span className="name">Rajvi Fatingan</span>
+                <span className="page-title">{title}</span>
+            </Link>
 
             <nav className="nav">
-                <Link
-                    href="/about"
-                    className={pathname === "/about" ? "active" : ""}
-                >
+                <Link href="/about" className={pathname === "/about" ? "active" : ""}>
                     About
                 </Link>
 
-                <Link
-                    href="/ervaring"
-                    className={pathname === "/ervaring" ? "active" : ""}
-                >
+                <Link href="/ervaring" className={pathname === "/ervaring" ? "active" : ""}>
                     Experience
                 </Link>
 
-                <Link
-                    href="/extra"
-                    className={pathname === "/extra" ? "active" : ""}
-                >
+                <Link href="/extra" className={pathname === "/extra" ? "active" : ""}>
                     Extra
                 </Link>
 
-                <Link
-                    href="/taal"
-                    className={pathname === "/taal" ? "active" : ""}
-                >
+                <Link href="/taal" className={pathname === "/taal" ? "active" : ""}>
                     Languages
                 </Link>
             </nav>
