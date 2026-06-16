@@ -55,7 +55,7 @@ docker-compose.yml
 docs/
 
 .github/
-.github/workflows/.gitlhub-ci.yml
+.github/workflows/.github-ci.yml
 .travis.yml
 .circleci/
 Jenkinsfile
