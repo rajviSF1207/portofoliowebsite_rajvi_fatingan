@@ -442,3 +442,65 @@ body {
   background: #3F356A;
   transform: translateY(-3px);
 }
+
+-->
+.extra-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.extra-card {
+  background: white;
+
+  padding: 2rem;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.extra-card:hover {
+  transform: translateY(-4px);
+}
+
+.extra-card h1,
+.extra-card h2 {
+  color: #3F356A;
+  margin-bottom: 1rem;
+}
+
+.extra-card p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-grid span {
+  background: #7C73A6;
+  color: white;
+
+  padding: 10px 14px;
+  border-radius: 12px;
+
+  font-weight: 500;
+}
+
+.extra-card ul {
+  padding-left: 1.2rem;
+}
+
+.extra-card li {
+  margin-bottom: 0.75rem;
+  color: #555;
+}

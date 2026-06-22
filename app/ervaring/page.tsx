@@ -8,7 +8,7 @@ export default function Experience() {
                 <div className="project-grid">
 
                     <div className="project-card">
-                        <img src="...." alt="wardrobe project" />
+                        <img src="./images/mydrobe.png" alt="wardrobe project" />
 
                         <strong>My Drobe</strong>
 
@@ -22,7 +22,7 @@ export default function Experience() {
                     </div>
 
                     <div className="project-card">
-                        <img src="...." alt="spaceship project" />
+                        <img src="./images/superspace.png" alt="spaceship project" />
 
                         <strong>Spaceship Reservation System</strong>
 
@@ -33,6 +33,20 @@ export default function Experience() {
 
                         <a href="" className="btn">Go to project</a>
                     </div>
+
+                    {/*<div className="project-card">*/}
+                    {/*    <img src="...." alt="wardrobe project" />*/}
+
+                    {/*    <strong>My Drobe</strong>*/}
+
+                    {/*    <p>A digital closet to save your items that has an AI assistent with purpose to give advice.*/}
+                    {/*        This project was made because i myself like fashion and at times my creativity is not there so now*/}
+                    {/*        i could ask for advice and keep track of my many items of clothes.</p>*/}
+
+                    {/*    <h4>Made with React, Next.js and Ollama model gemma2:2b</h4>*/}
+
+                    {/*    <a href="" className="btn">Go to project</a>*/}
+                    {/*</div>*/}
 
                 </div>
             </section>
@@ -46,10 +60,17 @@ export default function Experience() {
                         <h3>Hard Skills</h3>
                         <div className="skills-row">
                             <span>Angular</span>
+                            <span>React</span>
+                            <span>Vue.js</span>
                             <span>Spring Boot</span>
                             <span>Java</span>
                             <span>TypeScript</span>
                             <span>MySQL</span>
+                            <span>SCRUM</span>
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>Docker</span>
+                            <span>GIT</span>
                         </div>
                     </div>
 
@@ -60,6 +81,7 @@ export default function Experience() {
                             <span>Teamwork</span>
                             <span>Communication</span>
                             <span>Creativity</span>
+                            <span>Time management</span>
                         </div>
                     </div>
 

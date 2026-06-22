@@ -12,7 +12,7 @@ export default function Header() {
     const pageTitles: Record<PagePath, string> = {
         "/about": "About Me",
         "/ervaring": "Experience",
-        "/extra": "Extra",
+        "/extra": "About this web-site",
         "/taal": "Languages",
     };
 
@@ -33,7 +33,7 @@ export default function Header() {
 
             <nav className="nav">
                 <Link href="/about" className={pathname === "/about" ? "active" : ""}>
-                    About
+                    About Me
                 </Link>
 
                 <Link href="/ervaring" className={pathname === "/ervaring" ? "active" : ""}>
@@ -41,12 +41,9 @@ export default function Header() {
                 </Link>
 
                 <Link href="/extra" className={pathname === "/extra" ? "active" : ""}>
-                    Extra
+                    About this web-site
                 </Link>
 
-                <Link href="/taal" className={pathname === "/taal" ? "active" : ""}>
-                    Languages
-                </Link>
             </nav>
         </motion.header>
     );
