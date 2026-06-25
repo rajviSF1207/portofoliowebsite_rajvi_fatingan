@@ -46,6 +46,7 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             set -e
             cd /opt/reverse-proxy
+
             docker compose pull
             docker compose up -d
           EOF
