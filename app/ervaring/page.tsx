@@ -12,7 +12,7 @@ export default function Experience() {
 
                         <strong>My Drobe</strong>
 
-                        <p>A digital closet to save your items that has an AI assistent with purpose to give advice.
+                        <p>A digital closet to save your items that has an AI assistant with purpose to give advice.
                         This project was made because i myself like fashion and at times my creativity is not there so now
                             i could ask for advice and keep track of my many items of clothes.</p>
 
