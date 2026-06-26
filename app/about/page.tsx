@@ -1,8 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+import {usePathname} from "next/navigation";
+
+type PagePath = "/ervaring";
 
 export default function AboutPage() {
+    const pathname = usePathname();
+
+    const pageTitles: Record<PagePath, string> = {
+        "/ervaring": "Experience",
+    }
+
     return (
         <main className="about-wrapper">
             <motion.div
@@ -13,6 +23,7 @@ export default function AboutPage() {
             >
                 <div className="about-text">
                     <h1>Hello Hello :) </h1>
+                    <br/>
 
                     <p>
                         I’m Rajvi Fatingan, a developer who is currently into building web applications.
@@ -34,6 +45,20 @@ export default function AboutPage() {
                         Outside working i enjoy taking walks, travel around and explore places but also do this with others that are close to me.
                         I enjoy being there for others and going to social occasions.
                     </p>
+                    <br/>
+                    <h2> <strong> More information </strong> </h2>
+                    <p>To see more about me and the projects i made you can click on the experience button and Have fun!</p>
+
+                    <p>
+                        Go to:{" "}
+                        <Link
+                            href="/ervaring"
+                            className={`experience-btn ${pathname === "/ervaring" ? "active" : ""}`}
+                        >
+                            Experience
+                        </Link>
+                    </p>
+
                 </div>
 
                 <div className="image-scroll">

@@ -36,10 +36,6 @@ export default function Header() {
                     About Me
                 </Link>
 
-                <Link href="/ervaring" className={pathname === "/ervaring" ? "active" : ""}>
-                    Experience
-                </Link>
-
                 <Link href="/extra" className={pathname === "/extra" ? "active" : ""}>
                     About this web-site
                 </Link>

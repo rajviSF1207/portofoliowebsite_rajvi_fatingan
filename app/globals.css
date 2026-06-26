@@ -198,17 +198,12 @@ body {
 .about-box {
   display: flex;
   gap: 2.5rem;
-
   background: #ffffff;
   border-radius: 20px;
-
   padding: 3rem;
-
   width: 95%;
   max-width: 1400px;
-
   min-height: 515px;
-
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
@@ -281,6 +276,28 @@ body {
 
 .scroll-container img:hover {
   transform: scale(1.03);
+}
+
+.experience-btn {
+  display: inline;
+  color: #3F356A;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+
+  transition: all 0.2s ease;
+}
+
+.experience-btn:hover {
+  color: #7C73A6;
+  border-bottom: 2px solid #7C73A6;
+}
+
+.experience-btn.active {
+  color: #7C73A6;
+  border-bottom: 2px solid #7C73A6;
 }
 
 -->
