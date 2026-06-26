@@ -93,7 +93,7 @@ export default function Experience() {
 
                 <p>Download or view my resume below</p>
 
-                <a href="/cv.pdf" target="_blank" className="cv-button">
+                <a href="/CV.pdf" target="_blank" className="cv-button">
                     View / Download CV
                 </a>
             </section>
