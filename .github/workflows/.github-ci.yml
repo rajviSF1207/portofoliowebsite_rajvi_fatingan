@@ -22,8 +22,8 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
-      - name: Build Docker image
-        run: docker build --pull -t $DOCKER_IMAGE_NAME .
+      - name: Build Docker image (NO CACHE)
+        run: docker build --no-cache --pull -t $DOCKER_IMAGE_NAME .
 
       - name: Push Docker image
         run: docker push $DOCKER_IMAGE_NAME
@@ -48,8 +48,14 @@ jobs:
 
             cd /opt/reverse-proxy
 
-            # force clean redeploy so changes ALWAYS apply
+            echo "Stopping containers..."
             docker compose down
+
+            echo "Pulling latest image..."
             docker compose pull
-            docker compose up -d --force-recreate --remove-orphans
+
+            echo "Starting fresh deployment..."
+            docker compose up -d --force-recreate --pull always
+
+            echo "Deployment complete"
           EOF
