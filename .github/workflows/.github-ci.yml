@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  DOCKER_IMAGE_NAME: rajvi04sf/portofolioweb_rajvi_fatingan:latest
+  DOCKER_IMAGE_NAME: rajvi04sf/portofolioweb_rajvi_fatingan
 
 jobs:
   build:
