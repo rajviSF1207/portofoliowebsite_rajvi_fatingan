@@ -12,34 +12,33 @@ export default function AboutPage() {
                 transition={{ duration: 0.6 }}
             >
                 <div className="about-text">
-                    <h1>Hello Reader,</h1>
+                    <h1>Hello Hello :) </h1>
 
                     <p>
-                        I’m Rajvi Fatingan — a developer who likes building cool, fun but also usefull things on a web
-                        application.
+                        I’m Rajvi Fatingan, a developer who is currently into building web applications.
+                        I like working on things that are both useful and enjoyable to use.
                     </p>
-
                     <p>
-                        I mainly work with Angular, React/next.js and Spring Boot Java.
-                        I’m focused on improving my skills and gaining more knowledge by building real projects
-                        and making them better over time.
+                        I mainly work with Angular, Vue, React / Next.js, Python and Spring Boot (Java).
+                        I would love to improve my skills by building more projects.
                     </p>
-
                     <p>
-                        I’m the kind of developer who learns by building. I like experimenting, and improving the codes
-                        until everything feels right and smooth to use.
+                        I usually learn by just building stuff and figuring things out as I go.
                     </p>
-
                     <p>
-                        I like a clean design, to share creative ideas, and turning random thoughts into functional and enjoyable projects.
-                        i also love to make worthy project that could help others, think about education or translation or just something handy like in the pocket wardrobe.
+                        I like to use creativity in designs but make it suit the project.
+                        I enjoy turning ideas into working projects.
+                    </p>
+                    <br/>
+                    <p>
+                        Outside working i enjoy taking walks, travel around and explore places but also do this with others that are close to me.
+                        I enjoy being there for others and going to social occasions.
                     </p>
                 </div>
 
                 <div className="image-scroll">
                     <div className="scroll-container">
                         <img src="/images/balloonme.jpg" alt="me with balloons" />
-                        <img src="/images/waterme.jpg" alt="me on water bridge" />
                         <img src="/images/kermisme.jpg" alt="project 4" />
                     </div>
                 </div>
