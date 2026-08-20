@@ -18,7 +18,7 @@ export default function Experience() {
 
                         <h4>Made with React, Next.js and Ollama model gemma2:2b</h4>
 
-                        <a href="" className="btn">Go to project</a>
+                        <a href="https://mydrobe.rajvifatingan.nl/" className="btn">Go to project</a>
                     </div>
 
                     <div className="project-card">
@@ -31,22 +31,21 @@ export default function Experience() {
 
                         <h4>Made with Angular and Spring boot</h4>
 
-                        <a href="" className="btn">Go to project</a>
+                        <a href="https://superspace.rajvifatingan.nl/" className="btn">Go to project</a>
                     </div>
 
-                    {/*<div className="project-card">*/}
-                    {/*    <img src="...." alt="wardrobe project" />*/}
+                    <div className="project-card">
+                        <img src="./images/aigame.png" alt="aigame project" />
 
-                    {/*    <strong>My Drobe</strong>*/}
+                        <strong>AI web game</strong>
 
-                    {/*    <p>A digital closet to save your items that has an AI assistent with purpose to give advice.*/}
-                    {/*        This project was made because i myself like fashion and at times my creativity is not there so now*/}
-                    {/*        i could ask for advice and keep track of my many items of clothes.</p>*/}
+                        <p>A web game where you can learn how to use AI in an interactive way, think of little challenge games.
+                            this has been made so a person doesn't need to read so much an can learn in a more fun way.</p>
 
-                    {/*    <h4>Made with React, Next.js and Ollama model gemma2:2b</h4>*/}
+                        <h4>Made with Vue Vite 3 and Pinia store</h4>
 
-                    {/*    <a href="" className="btn">Go to project</a>*/}
-                    {/*</div>*/}
+                        <a href="https://aigame.rajvifatingan.nl/" className="btn">Go to project</a>
+                    </div>
 
                 </div>
             </section>

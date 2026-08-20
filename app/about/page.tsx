@@ -49,22 +49,24 @@ export default function AboutPage() {
                     <h2> <strong> More information </strong> </h2>
                     <p>To see more about me and the projects i made you can click on the experience button and Have fun!</p>
 
-                    <p>
-                        Go to:{" "}
-                        <Link
+                    <div className="experience-cta">
+                        <p>Want to know more about me?</p>
+
+                        <a
                             href="/ervaring"
                             className={`experience-btn ${pathname === "/ervaring" ? "active" : ""}`}
                         >
-                            Experience
-                        </Link>
-                    </p>
+                            Go to my experience
+                            <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
                 <div className="image-scroll">
                     <div className="scroll-container">
                         <img src="/images/balloonme.jpg" alt="me with balloons" />
-                        <img src="/images/kermisme.jpg" alt="project 4" />
+                        <img src="/images/kermisme.jpg" alt="kermis" />
                     </div>
                 </div>
             </motion.div>
