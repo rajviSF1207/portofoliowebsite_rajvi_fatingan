@@ -1,10 +1,16 @@
 services:
   server:
-    container_name: ubuntu-rajvifatingan
+    container_name: portfolio_frontend
     build:
       context: .
       dockerfile: Dockerfile
     image: rajvi04sf/portofolioweb_rajvi_fatingan:latest
-    ports:
-      - "8080:80"
+    environment:
+      - PORT=3000
+    networks:
+      - proxy-network
     restart: unless-stopped
+
+networks:
+  proxy-network:
+    external: true
